@@ -13,16 +13,9 @@ guilds = [
 
 def get_user_info_from_login_server(user_id):
     """
-    This is the key function for integration testing.
-    It calls the login server to get user information.
+    Complete this function
     """
-    try:
-        response = requests.get(f"http://localhost:5001/user/{user_id}")
-        if response.status_code == 200:
-            return response.json()
-        return None
-    except requests.exceptions.RequestException:
-        return None
+    return
 
 @app.route('/guilds/<int:user_id>')
 def get_user_guilds(user_id):
